@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+.all{
+  background-image: url(background.jpg);
+  height:800px;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:90%;
+  background-color: white;
+  color: red;
+}
+.main2{
+  padding-right:20px;
+}
+.header{
+  display: flex;
+  padding-top:30px;
+  font-family: "Matemasie", system-ui;
+  font-weight: 400;
+  font-style: normal;}
+
+.input{
+  border: 2px solid red;
+  width: 100%;
+  margin: 10px;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+.h1{
+  display: flex;
+  justify-content: center;
+  font-family: "Matemasie", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+@media only screen and(max-width:1200px) {
+  .all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+  }
+}

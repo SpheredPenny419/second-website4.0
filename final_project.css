@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+.all {
+    background-image: url(background.jpg);
+}
+
+.header-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.h1 {
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
+
+.header-text {
+    padding-left: 20px;
+    color: rgb(255, 0, 0);
+    font-size: 300%;
+    background-color: white;
+    width: 100%;
+    font-family: "Matemasie", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+/* Адаптивний дизайн для меншої ширини екрану */
+@media (max-width: 768px) {
+    .header-main {
+        flex-direction: column;
+    }
+
+    .h1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-text {
+        padding-left: 0;
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+
+.sets {
+    font-family: "Matemasie", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.button1 {
+    display: flex;
+    margin-right: 20px;
+}
+
+.all-cards {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+}
+
+.carousel {
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.cards {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.ending {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: white;
+    background-color: red;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:1200px) {
+    .carousel {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .header-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: center;
+        margin-left: -3px;
+
+    }
+
+}
+
+@media only screen and (max-width:1200px) {
+    .carousel {
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    h1 {
+        width: 100%;
+    }
+
+    .header-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+
+    }
+}
